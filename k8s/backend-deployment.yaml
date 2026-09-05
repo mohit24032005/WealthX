@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: wealthx-backend
+
+spec:
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: wealthx-backend
+
+  template:
+    metadata:
+      labels:
+        app: wealthx-backend
+
+    spec:
+      containers:
+        - name: backend
+          image: pranav12344321/wealthx-backend:latest
+          imagePullPolicy: IfNotPresent
+
+          ports:
+            - containerPort: 5000
+
+          env:
+            - name: PORT
+              value: "5000"
+
+            - name: CLIENT_URL
+              value: "http://localhost:5173"
+
+            - name: MONGO_URI
+              valueFrom:
+                secretKeyRef:
+                  name: wealthx-backend-secret
+                  key: MONGO_URI
+
+            - name: JWT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: wealthx-backend-secret
+                  key: JWT_SECRET

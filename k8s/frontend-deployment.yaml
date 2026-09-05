@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: wealthx-frontend
+
+spec:
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: wealthx-frontend
+
+  template:
+    metadata:
+      labels:
+        app: wealthx-frontend
+
+    spec:
+      containers:
+        - name: frontend
+          image: pranav12344321/wealthx-frontend:latest
+          imagePullPolicy: IfNotPresent
+
+          ports:
+            - containerPort: 5173

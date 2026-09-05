@@ -1,0 +1,72 @@
+/* AI Finance Controller CSS */
+.controller-container {
+  padding: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #f1f5f9;
+}
+
+.controller-header-banner {
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.9), rgba(17, 24, 39, 0.8));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 24px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.controller-badge {
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  color: #34d399;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  text-transform: uppercase;
+}
+
+.recon-status-pill {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.recon-status-pill.matched { background: rgba(16, 185, 129, 0.15); color: #34d399; }
+.recon-status-pill.unmatched_amount { background: rgba(244, 63, 94, 0.15); color: #fb7185; }
+.recon-status-pill.missing_settlement { background: rgba(245, 158, 11, 0.15); color: #fbbf24; }
+.recon-status-pill.duplicate_payment { background: rgba(168, 85, 247, 0.15); color: #c084fc; }
+.recon-status-pill.fee_discrepancy { background: rgba(14, 165, 233, 0.15); color: #38bdf8; }
+
+.explanation-card {
+  background: rgba(30, 41, 59, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 14px;
+}
+
+.explanation-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #38bdf8;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.explanation-text {
+  font-size: 0.88rem;
+  color: #e2e8f0;
+  line-height: 1.5;
+  margin: 0;
+}

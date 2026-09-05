@@ -1,0 +1,189 @@
+.loans-view {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.loans-header-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.loans-title {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 6px;
+}
+
+.loans-sub {
+  color: var(--text-secondary);
+  font-size: 14px;
+  max-width: 680px;
+}
+
+.loans-top-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.debt-explanation-card {
+  padding: 20px 24px;
+}
+
+.debt-exp-text {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-top: 8px;
+}
+
+/* Loans Table */
+.loans-table-wrapper {
+  overflow-x: auto;
+}
+
+.loans-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px;
+}
+
+.loans-table th {
+  background: var(--bg-surface-elevated);
+  padding: 12px 16px;
+  color: var(--text-secondary);
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.loans-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.loan-row:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.loan-type-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.loan-icon {
+  font-size: 22px;
+  width: 38px;
+  height: 38px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loan-type-name {
+  display: block;
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+.loan-lender-name {
+  display: block;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.btn-sim-payoff {
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  color: var(--accent-teal);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.btn-sim-payoff:hover,
+.btn-sim-payoff.active {
+  background: var(--accent-teal);
+  color: #031e17;
+}
+
+/* Payoff Simulator */
+.sim-panel {
+  padding: 24px;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  background: linear-gradient(180deg, rgba(6, 78, 59, 0.15), rgba(15, 23, 42, 0.8));
+}
+
+.sim-grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 24px;
+  margin-top: 16px;
+}
+
+.sim-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sim-results-box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+}
+
+.sim-stat-banner {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  padding: 16px 20px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sim-compare-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.sim-sub-box {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.highlight-box {
+  border-color: rgba(16, 185, 129, 0.4);
+  background: rgba(16, 185, 129, 0.08);
+}
+
+@media (max-width: 860px) {
+  .sim-grid {
+    grid-template-columns: 1fr;
+  }
+  .sim-compare-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,272 @@
+.hype-check-view {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.hype-header {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.hype-title {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.hype-sub {
+  font-size: 14.5px;
+  color: var(--text-secondary);
+  max-width: 720px;
+  line-height: 1.6;
+}
+
+/* Search Card */
+.hype-search-card {
+  padding: 24px 28px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hype-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 6px 8px 6px 16px;
+  transition: var(--transition-smooth);
+}
+
+.hype-input-wrapper:focus-within {
+  border-color: var(--accent-cyan);
+  box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.25);
+}
+
+.hype-search-icon {
+  font-size: 16px;
+  color: var(--text-muted);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  line-height: 1;
+  margin-right: 4px;
+}
+
+.hype-input-field {
+  flex: 1;
+  border: none !important;
+  background: transparent !important;
+  padding: 8px 4px !important;
+  font-size: 14.5px;
+  color: var(--text-primary);
+  outline: none !important;
+  box-shadow: none !important;
+  font-family: inherit;
+}
+
+.hype-input-field::placeholder {
+  color: var(--text-muted);
+  opacity: 0.85;
+}
+
+.btn-hype-submit {
+  border-radius: var(--radius-sm);
+  padding: 10px 22px;
+  font-size: 13.5px;
+  font-weight: 700;
+  white-space: nowrap;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.trending-chips-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.trending-label {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.trending-chip {
+  padding: 6px 12px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  border-radius: var(--radius-full);
+  font-size: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: var(--transition-smooth);
+}
+
+.trending-chip:hover {
+  background: var(--bg-card-hover);
+  color: var(--text-primary);
+}
+
+.trending-chip.active {
+  background: rgba(6, 182, 212, 0.15);
+  border-color: var(--accent-cyan);
+  color: var(--accent-cyan);
+}
+
+.trending-price-tag {
+  font-size: 10.5px;
+  color: var(--accent-teal);
+  background: rgba(16, 185, 129, 0.12);
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+
+/* Results Box */
+.hype-results-box {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.hype-hero-card {
+  padding: 32px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.hype-hero-left {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex: 1;
+  min-width: 320px;
+}
+
+.hype-hero-title-box {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.hype-asset-name {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.hype-status-pill {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.hype-summary-text {
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* Live Real-Time Market Data Card */
+.hype-live-metrics-card {
+  padding: 20px 24px;
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.06) 0%, var(--bg-card) 100%);
+  border: 1px solid rgba(6, 182, 212, 0.25);
+}
+
+.hype-live-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hype-live-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.live-stat-pill {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* 6 Dimensions */
+.dimensions-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.dimensions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 18px;
+}
+
+.dimension-card {
+  padding: 20px;
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dimension-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dimension-title {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.dimension-detail {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* Verdict */
+.hype-takeaway-card {
+  padding: 24px 28px;
+  border-radius: var(--radius-lg);
+  border-left: 4px solid var(--accent-teal);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.takeaway-text {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.5;
+}

@@ -1,0 +1,247 @@
+.next-money-view {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.next-money-header {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.next-money-title {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.next-money-sub {
+  font-size: 14.5px;
+  color: var(--text-secondary);
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+/* Amount Selector Card */
+.amount-selector-card {
+  padding: 28px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.amount-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  min-width: 280px;
+}
+
+.amount-input-label {
+  font-size: 12.5px;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.amount-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 6px 12px;
+}
+
+.amount-currency-prefix {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--accent-cyan);
+  font-family: var(--font-mono);
+}
+
+.amount-input-field {
+  border: none;
+  background: transparent;
+  padding: 6px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  color: var(--text-primary);
+  width: 100%;
+}
+
+.amount-input-field:focus {
+  box-shadow: none;
+}
+
+.quick-amount-pills {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.quick-pill {
+  padding: 8px 14px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 600;
+  font-family: var(--font-mono);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.quick-pill:hover {
+  background: var(--bg-card-hover);
+  color: var(--text-primary);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.quick-pill.active {
+  background: rgba(37, 99, 235, 0.2);
+  border-color: var(--accent-primary);
+  color: #60a5fa;
+}
+
+/* Results Box */
+.allocation-results-box {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.scenario-banner {
+  padding: 28px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.scenario-banner-left {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+  min-width: 300px;
+}
+
+.scenario-title {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.scenario-desc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.scenario-metrics-badge {
+  display: flex;
+  gap: 16px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 12px 18px;
+}
+
+.scenario-badge-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-family: var(--font-mono);
+}
+
+.allocation-bar-card {
+  padding: 28px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-title {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+/* Action Steps Grid */
+.action-steps-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.action-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.action-step-card {
+  padding: 20px;
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.action-step-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.action-step-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.action-step-name {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.action-step-amt {
+  font-size: 20px;
+  font-weight: 800;
+  font-family: var(--font-mono);
+}
+
+.action-step-pct {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.action-step-rationale {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.action-step-btn {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 12.5px;
+  margin-top: 6px;
+}
