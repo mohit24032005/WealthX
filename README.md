@@ -2,7 +2,7 @@
 
 > "Intelligence for Every Financial Decision"
 
-> Developed by **Vijet Hegde**
+> Developed by **Mohit Agarwal*
 
 **GitHub**: [https://github.com/VijetHegde17/WealthX](https://github.com/VijetHegde17/WealthX)  
 **Buildathon Focus**: **Razorpay AI Buildathon** (Solo Project) — Primary: **Track 03 (AI Revenue Recovery)** • Secondary: **Track 04 (AI Finance Controller)**
